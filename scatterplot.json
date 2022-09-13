@@ -4,7 +4,7 @@
   "width": 650,
   "height": 250,
   "padding": 15,
-  "title": "Yearly Change in Population for Selected States from 2000-2020",
+  "title": "Yearly Change in Population for MT, WY, and ND from 2000-2020",
   "data": [
     {
       "name": "table",
@@ -30,7 +30,6 @@
         {"x": 2018, "y": 7956, "c": "red", "name": "MT"},
         {"x": 2019, "y": 8305, "c": "red", "name": "MT"},
         {"x": 2020, "y": 10454, "c": "red", "name": "MT"},
-
         {"x": 2000, "y": 2520, "c": "rgb(80, 200, 120)", "name": "WY"},
         {"x": 2001, "y": 357, "c": "rgb(80, 200, 120)", "name": "WY"},
         {"x": 2002, "y": 5360, "c": "rgb(80, 200, 120)", "name": "WY"},
@@ -52,7 +51,6 @@
         {"x": 2018, "y": -940, "c": "rgb(80, 200, 120)", "name": "WY"},
         {"x": 2019, "y": 1062, "c": "rgb(80, 200, 120)", "name": "WY"},
         {"x": 2020, "y": 2212, "c": "rgb(80, 200, 120)", "name": "WY"},
-
         {"x": 2000, "y": -2236, "c": "steelblue", "name": "ND"},
         {"x": 2001, "y": -2961, "c": "steelblue", "name": "ND"},
         {"x": 2002, "y": -894, "c": "steelblue", "name": "ND"},
@@ -137,6 +135,7 @@
       "scale": "y",
       "labels": true,
       "title": "Change in Population",
+      "tickCount": 5,
       "labelPadding": 2
     }
   ],
