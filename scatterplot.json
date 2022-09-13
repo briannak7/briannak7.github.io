@@ -1,160 +1,243 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "Histogram for Assignment 1",
-  "width": 250,
-  "height": 200,
-  "padding": 5,
-  "title": "Average Change in Population for Montana for 2000-2020",
+  "description": "Scatter Plot for Assignemnt 1",
+  "width": 650,
+  "height": 250,
+  "padding": 15,
+  "title": "Yearly Change in Population for MT, WY, and ND from 2000-2020",
   "data": [
     {
       "name": "table",
       "values": [
-        {
-          "x": "2000-2010",
-          "y": 300,
-          "c": "rgb(255, 0, 0)"
-        },
-        {
-          "x": "2010-2020",
-          "y": 200,
-          "c": "rgb(255, 0, 0)"
-        }
+        {"x": 2000, "y": 6266, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2001, "y": 3188, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2002, "y": 4706, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2003, "y": 7963, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2004, "y": 10379, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2005, "y": 10093, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2006, "y": 12590, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2007, "y": 12014, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2008, "y": 11709, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2009, "y": 7567, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2010, "y": 6748, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2011, "y": 6788, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2012, "y": 6650, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2013, "y": 9990, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2014, "y": 8499, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2015, "y": 8838, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2016, "y": 10642, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2017, "y": 11725, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2018, "y": 7956, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2019, "y": 8305, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2020, "y": 10454, "c": "rgb(255, 0, 0)", "name": "MT"},
+        {"x": 2000, "y": 2520, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2001, "y": 357, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2002, "y": 5360, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2003, "y": 3436, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2004, "y": 5653, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2005, "y": 5051, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2006, "y": 8510, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2007, "y": 12209, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2008, "y": 11167, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2009, "y": 13808, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2010, "y": 4680, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2011, "y": 2960, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2012, "y": 9165, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2013, "y": 5964, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2014, "y": 539, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2015, "y": 3230, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2016, "y": -1146, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2017, "y": -5249, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2018, "y": -940, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2019, "y": 1062, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2020, "y": 2212, "c": "rgb(0, 0, 255)", "name": "WY"},
+        {"x": 2000, "y": -2236, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2001, "y": -2961, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2002, "y": -894, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2003, "y": 649, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2004, "y": 5888, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2005, "y": 1384, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2006, "y": 3333, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2007, "y": 3400, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2008, "y": 4747, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2009, "y": 7399, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2010, "y": 9784, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2011, "y": 10774, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2012, "y": 16701, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2013, "y": 20922, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2014, "y": 15587, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2015, "y": 16801, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2016, "y": 577, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2017, "y": 641, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2018, "y": 3307, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2019, "y": 3662, "c": "rgb(0,255,0)", "name": "ND"},
+        {"x": 2020, "y": 1585, "c": "rgb(0,255,0)", "name": "ND"}
       ]
-    }
+    },
+    {
+      "name": "events",
+      "format": {"type": "json", "parse": {"when": "date"}},
+      "values": [
+        {"name": "Stock Market Crash", "when": 2008},
+        {"name": "George W. Bush ", "when": 2001},
+        {"name": "Barrack Obama", "when": 2009},
+        {"name": "Donald Trump", "when": 2017}
+      ]
+    },
+    {"name": "zero", "values": [{"x": 2000, "y": 0, "label": "Zero"}]}
   ],
   "signals": [
     {
-      "name": "tooltip",
-      "value": {},
-      "on": [
-        {
-          "events": "rect:mouseover",
-          "update": "datum"
-        },
-        {
-          "events": "rect:mouseout",
-          "update": "{}"
-        }
-      ]
-    }
+      "name": "count",
+      "update": "time('July 1 2010')",
+      "on": [{"events": "mousemove", "update": "count + 1"}]
+    },
+    {"name": "maxDate", "update": "time('July 1 2020')"}
   ],
   "scales": [
     {
-      "name": "xscale",
-      "type": "band",
-      "domain": {
-        "data": "table",
-        "field": "x"
-      },
+      "name": "x",
+      "type": "point",
       "range": "width",
-      "padding": 0.05,
-      "round": true
+      "domain": {"data": "table", "field": "x"}
     },
     {
-      "name": "yscale",
-      "domain": {
-        "data": "table",
-        "field": "y"
-      },
+      "name": "y",
+      "type": "linear",
+      "range": "height",
       "nice": true,
-      "range": "height"
+      "zero": false,
+      "domain": {"data": "table", "field": "y"}
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "range": {"data": "table", "field": "c"},
+      "domain": {"data": "table", "field": "c"}
+    },
+    {
+      "name": "name",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "name"},
+      "range": {"data": "table", "field": "c"}
     }
   ],
   "axes": [
     {
       "orient": "bottom",
-      "scale": "xscale",
+      "scale": "x",
       "labels": true,
-      "title": "Years",
-      "labelPadding": 2,
-      "titlePadding": 6
+      "title": "Year",
+      "labelPadding": 2
     },
     {
       "orient": "left",
-      "scale": "yscale",
+      "scale": "y",
       "labels": true,
-      "title": "Population",
-      "titlePadding": 6
+      "title": "Change in Population",
+      "labelPadding": 2
+    }
+  ],
+  "legends": [
+    {
+      "from": {"data": "table"},
+      "fill": "name",
+      "title": "State",
+      "encode": {
+        "title": {"update": {"fontSize": {"value": 14}}},
+        "symbols": {"enter": {"fillOpacity": {"value": 1}}},
+        "labels": {"update": {"text": {"data": "table", "field": "value"}}}
+      }
     }
   ],
   "marks": [
     {
-      "type": "rect",
-      "from": {
-        "data": "table"
-      },
+      "name": "Points",
+      "type": "symbol",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {"opacity": {"value": 1}},
+        "update": {
+          "x": {"scale": "x", "field": "x"},
+          "y": {"scale": "y", "field": "y"},
+          "shape": {"value": "circle"},
+          "fill": {"scale": "color", "field": "c"},
+          "stroke": {"scale": "color", "field": "c"},
+          "strokeOpacity": {"value": 1}
+        },
+        "hover": {"strokeOpacity": {"value": 0.5}}
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "events"},
       "encode": {
         "enter": {
-          "x": {
-            "scale": "xscale",
-            "field": "x",
-            "type": "nominal"
-          },
-          "width": {
-            "scale": "xscale",
-            "band": 1
-          },
-          "y": {
-            "scale": "yscale",
-            "field": "y",
-            "type": "quantitative"
-          },
-          "y2": {
-            "scale": "yscale",
-            "value": 0
-          }
-        },
-        "update": {
-          "fill": {
-            "field": "c"
-          }
-        },
-        "hover": {
-          "fill": {
-            "value": "grey"
-          }
+          "x": {"scale": "x", "field": "when"},
+          "y": {"value": -10},
+          "angle": {"value": -25},
+          "fill": {"value": "#000"},
+          "text": {"field": "name"},
+          "fontSize": {"value": 10}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "events"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "x", "field": "when"},
+          "y": {"value": -8},
+          "width": {"value": 1},
+          "height": {"field": {"group": "height"}, "offset": 8},
+          "fill": {"value": "#888"}
         }
       }
     },
     {
       "type": "text",
+      "from": {"data": "zero"},
       "encode": {
         "enter": {
-          "align": {
-            "value": "center"
-          },
-          "baseline": {
-            "value": "bottom"
-          },
-          "fill": {
-            "value": "#333"
-          }
-        },
-        "update": {
-          "x": {
-            "scale": "xscale",
-            "signal": "tooltip.x",
-            "band": 0.5
-          },
-          "y": {
-            "scale": "yscale",
-            "signal": "tooltip.y",
-            "offset": -2
-          },
-          "text": {
-            "signal": "tooltip.y"
-          },
-          "fillOpacity": [
-            {
-              "test": "datum === tooltip",
-              "value": 0
-            },
-            {
-              "value": 1
-            }
-          ]
+          "x": {"scale": "x", "field": "x", "offset": -50},
+          "y": {"scale": "y", "field": "y", "offset": 2},
+          "fill": {"value": "red"},
+          "text": {"field": "label"},
+          "fontSize": {"value": 12}
         }
       }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "zero"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "x", "field": "x"},
+          "x2": {"scale": "x", "value": 2020},
+          "y": {"scale": "y", "field": "y"},
+          "height": {"value": 2},
+          "fill": {"value": "#557"}
+        }
+      }
+    },
+    {
+      "type": "group",
+      "from": {"facet": {"name": "series", "data": "table", "groupby": "c"}},
+      "marks": [
+        {
+          "type": "line",
+          "from": {"data": "series"},
+          "encode": {
+            "enter": {
+              "x": {"scale": "x", "field": "x"},
+              "y": {"scale": "y", "field": "y"},
+              "stroke": {"scale": "color", "field": "c"},
+              "strokeWidth": {"value": 2}
+            }
+          }
+        }
+      ]
     }
   ],
   "config": {}
