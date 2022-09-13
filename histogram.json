@@ -18,7 +18,7 @@
       {"category":"2000-2005", "group": "ND", "value":305, "c":"steelblue"},
       {"category":"2005-2010", "group": "ND", "value":5007.83, "c":"steelblue"},
       {"category":"2010-2015", "group": "ND", "value":15094.83, "c":"steelblue"},
-      {"category":"2015-2020", "group": "ND", "value":4428.83, "c":"steelblue"},
+      {"category":"2015-2020", "group": "ND", "value":4428.83, "c":"steelblue"}
     ]
   },
   "mark": "bar",
@@ -33,5 +33,5 @@
     "xOffset": {"field": "group"},
     "color": {"field":"group","scale": {"range": ["red", "steelblue", "rgb(80, 200, 120)"]}},
     "tooltip": {"field": "value", "type": "quantitative"}
-  },
+  }
 }
