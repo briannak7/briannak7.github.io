@@ -20,22 +20,13 @@
 
 <script>
   const spec1 = "scatterplot.json";
-  const spec2 = "MT_histogram.json";
-  const spec3 = "WY_histogram.json";
-  const spec4 = "ND_histogram.json";
+  const spec2 = "histogram.json";
+
   vegaEmbed("#vis1", spec1)
           // result.view provides access to the Vega View API
           .then(result => console.log(result))
           .catch(console.warn);
   vegaEmbed("#vis2", spec2)
-          // result.view provides access to the Vega View API
-          .then(result => console.log(result))
-          .catch(console.warn);
-  vegaEmbed("#vis3", spec3)
-          // result.view provides access to the Vega View API
-          .then(result => console.log(result))
-          .catch(console.warn);
-  vegaEmbed("#vis4", spec4)
           // result.view provides access to the Vega View API
           .then(result => console.log(result))
           .catch(console.warn);
