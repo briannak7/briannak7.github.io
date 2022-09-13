@@ -3,7 +3,9 @@
   <meta charset="utf-8">
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@5"></script>
+  <title>Assignment 1</title>
 </head>
+
 
 <body>
 <div id="vis1"></div>
@@ -13,14 +15,30 @@
 
 
 <script>
-  const spec = "scatterplot.json";
-  const spec = "MT_histogram.json";
-  const spec = "WY_histogram.json";
-  const spec = "ND_histogram.json";
-  vegaEmbed("#vis", spec)
+  const spec1 = "scatterplot.json";
+  const spec2 = "MT_histogram.json";
+  const spec3 = "WY_histogram.json";
+  const spec4 = "ND_histogram.json";
+  vegaEmbed("#vis", spec1)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
+  vegaEmbed("#vis", spec2)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
+  vegaEmbed("#vis", spec3)
+          // result.view provides access to the Vega View API
+          .then(result => console.log(result))
+          .catch(console.warn);
+  vegaEmbed("#vis", spec4)
           // result.view provides access to the Vega View API
           .then(result => console.log(result))
           .catch(console.warn);
 
 </script>
+
+</body>
+<h1>Header</h1>
+<p>This is a paragraph.</p>
 </body>
