@@ -86,7 +86,7 @@
       "values": [
         {"name": "Stock Market Crash", "when": 2008},
         {"name": "George W. Bush ", "when": 2001},
-        {"name": "Barrack Obama", "when": 2009},
+        {"name": "Barack Obama", "when": 2009},
         {"name": "Donald Trump", "when": 2017}
       ]
     },
