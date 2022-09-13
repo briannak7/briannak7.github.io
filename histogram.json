@@ -31,7 +31,6 @@
       "title":"Change in Population"
     }},
     "xOffset": {"field": "group"},
-    "color": {"field":"group","scale": {"range": ["red", "steelblue", "rgb(80, 200, 120)"]}},
-    "tooltip": {"field": "value", "type": "quantitative"}
+    "color": {"field":"group","scale": {"range": ["red", "steelblue", "rgb(80, 200, 120)"]}}
   }
 }
