@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "Scatter Plot for Assignemnt 1",
-  "width": 650,
-  "height": 250,
+  "width": 700,
+  "height": 400,
   "padding": 15,
   "title": "Yearly Change in Population for MT, WY, and ND from 2000-2020",
   "data": [
@@ -79,9 +79,9 @@
       "format": {"type": "json", "parse": {"when": "date"}},
       "values": [
         {"name": "Stock Market Crash", "when": 2008},
-        {"name": "George W. Bush assumes office", "when": 2001},
-        {"name": "Barack Obama assumes office", "when": 2009},
-        {"name": "Donald Trump assumes office", "when": 2017}
+        {"name": "George W. Bush Inauguration", "when": 2001},
+        {"name": "Barack Obama Inauguration", "when": 2009},
+        {"name": "Donald Trump Inauguration", "when": 2017}
       ]
     },
     {"name": "zero", "values": [{"x": 2000, "y": 0, "label": "Zero"}]}
@@ -192,19 +192,6 @@
           "width": {"value": 1},
           "height": {"field": {"group": "height"}, "offset": 8},
           "fill": {"value": "#888"}
-        }
-      }
-    },
-    {
-      "type": "text",
-      "from": {"data": "zero"},
-      "encode": {
-        "enter": {
-          "x": {"scale": "x", "field": "x", "offset": -50},
-          "y": {"scale": "y", "field": "y", "offset": 2},
-          "fill": {"value": "red"},
-          "text": {"field": "label"},
-          "fontSize": {"value": 12}
         }
       }
     },
