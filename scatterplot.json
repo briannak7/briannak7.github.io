@@ -5,6 +5,7 @@
   "height": 350,
   "padding": 15,
   "title": "Yearly Change in Population for MT, WY, and ND from 2000-2020",
+  "fontSize": 20,
   "data": [
     {
       "name": "table",
