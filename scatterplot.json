@@ -180,7 +180,7 @@
           "angle": {"value": -25},
           "fill": {"value": "#000"},
           "text": {"field": "name"},
-          "fontSize": {"value": 10}
+          "fontSize": {"value": 15}
         }
       }
     },
