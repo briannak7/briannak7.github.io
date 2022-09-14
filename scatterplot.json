@@ -128,7 +128,8 @@
       "scale": "x",
       "labels": true,
       "title": "Year",
-      "labelPadding": 2
+      "labelPadding": 2,
+      "titleFontSize": 18
     },
     {
       "orient": "left",
@@ -136,7 +137,8 @@
       "labels": true,
       "title": "Change in Population",
       "tickCount": 5,
-      "labelPadding": 2
+      "labelPadding": 2,
+      "titleFontSize": 18
     }
   ],
   "legends": [
@@ -144,7 +146,7 @@
       "fill": "name",
       "title": "State",
       "encode": {
-        "title": {"update": {"fontSize": {"value": 14}}},
+        "title": {"update": {"fontSize": {"value": 18}}},
         "symbols": {"enter": {"fillOpacity": {"value": 1}}},
         "labels": {"update": {"text": {"data": "table", "field": "value"}}}
       }
