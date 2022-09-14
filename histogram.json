@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Average Change in Population Over Time",
-  "width": 500,
-  "height": 500,
+  "width": 650,
+  "height": 450,
   "data": {
     "values": [
       {"category":"2000-2005", "group": "MT", "value":7099.17, "c":"red"},
