@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Average Change in Population Over Time",
+  "title": {"text": "Average Change in Population Over Time","fontSize": 15},
   "width": 600,
   "height": 300,
   "data": {
