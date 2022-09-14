@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Average Change in Population Over Time",
-  "width": 500,
-  "height": 250,
+  "width": 600,
+  "height": 300,
   "data": {
     "values": [
       {"category": "2000-2005", "group": "MT", "value": 7099.17, "c": "red"},
@@ -30,7 +30,7 @@
       {
         "category": "2015-2020",
         "group": "WY",
-        "value": -135,
+        "value": -138.5,
         "c": "rgb(80, 200, 120)"
       },
       {"category": "2000-2005", "group": "ND", "value": 305, "c": "steelblue"},
